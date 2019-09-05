@@ -134,6 +134,7 @@ ModelImporter:
     400126: oo_hands_character
     400128: //RootNode
     2100000: oo_hands_mat
+    2100002: oOCo_hands_mat
     4300000: oo_cylinder_body
     9500000: //RootNode
     13700000: oo_cylinder_body
@@ -142,8 +143,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: oo_hands_mat
+      name: oOCo_hands_mat
     second: {fileID: 2100000, guid: 0548d257320be0640a63b2da9e76bd6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: oo_hands_mat
+    second: {instanceID: 0}
   materials:
     importMaterials: 1
     materialName: 0
@@ -198,8 +204,8 @@ ModelImporter:
     previousCalculatedGlobalScale: 1
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
+    normalSmoothAngle: 45
+    normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
