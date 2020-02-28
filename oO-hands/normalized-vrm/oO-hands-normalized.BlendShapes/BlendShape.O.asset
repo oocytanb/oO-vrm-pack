@@ -17,7 +17,7 @@ MonoBehaviour:
   Preset: 6
   Values:
   - RelativePath: oo_cylinder_body
-    Index: 5
+    Index: 4
     Weight: 100
   MaterialValues: []
   IsBinary: 0

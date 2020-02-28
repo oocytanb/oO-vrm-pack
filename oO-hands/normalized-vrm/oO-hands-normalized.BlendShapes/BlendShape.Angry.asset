@@ -17,10 +17,10 @@ MonoBehaviour:
   Preset: 9
   Values:
   - RelativePath: oo_cylinder_body
-    Index: 7
+    Index: 6
     Weight: 100
   - RelativePath: oo_cylinder_body
-    Index: 9
+    Index: 8
     Weight: 100
   MaterialValues: []
   IsBinary: 1

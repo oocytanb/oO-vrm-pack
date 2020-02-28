@@ -13,20 +13,20 @@ MonoBehaviour:
   m_Name: BlendShape
   m_EditorClassIdentifier: 
   Clips:
-  - {fileID: 11400000, guid: 257164ebd5694854ba7611ec0e2443e7, type: 2}
-  - {fileID: 11400000, guid: e9325c7f944cf9345b8384efbf48798a, type: 2}
-  - {fileID: 11400000, guid: 10f3ee32eca36ff49b83cefdb17351fc, type: 2}
-  - {fileID: 11400000, guid: 410610975c7379d43acd42e91d214a64, type: 2}
-  - {fileID: 11400000, guid: 7103d15347483984499e87da1f33873d, type: 2}
-  - {fileID: 11400000, guid: bae95195871d6f04099c9ae9960d768a, type: 2}
-  - {fileID: 11400000, guid: e256760f40eb4514ca1ecc78936a8c2d, type: 2}
-  - {fileID: 11400000, guid: 6b7cf15c36f1eb743a42c141e4a0239d, type: 2}
-  - {fileID: 11400000, guid: 3fb76d14dc7f6b94795690f473188607, type: 2}
-  - {fileID: 11400000, guid: af8f4206522d5c84db8f5b5ddf529978, type: 2}
-  - {fileID: 11400000, guid: ee76b20de88147e43a1abf2243a86544, type: 2}
-  - {fileID: 11400000, guid: c3cb34d163fd927488ce41fb86f74fb8, type: 2}
-  - {fileID: 11400000, guid: c465701cba6a57b4aa044ab7a565f975, type: 2}
-  - {fileID: 11400000, guid: 381b0cda1cd51364987d0e7d8ffb8a9d, type: 2}
-  - {fileID: 11400000, guid: ac4899f902e5374469327c9ebf8ea973, type: 2}
-  - {fileID: 11400000, guid: 2e05aa8fb1197514eb2ca1476bf40637, type: 2}
-  - {fileID: 11400000, guid: 7051e975625bb794092f8b94e88c6f1e, type: 2}
+  - {fileID: 11400000, guid: 029397741cae9844e93b009644701f69, type: 2}
+  - {fileID: 11400000, guid: c3fa7934452832a41bcc2892e7ed8ef3, type: 2}
+  - {fileID: 11400000, guid: 9390eae6756f2e34eb7bcbfef362da97, type: 2}
+  - {fileID: 11400000, guid: d0f1fecd2d56ac844b76e7652f1f6ae3, type: 2}
+  - {fileID: 11400000, guid: 824e2d4c61326c545be1b8018db24c5d, type: 2}
+  - {fileID: 11400000, guid: 76eb765ef370bcc40b643fe3f66df204, type: 2}
+  - {fileID: 11400000, guid: 41199824fdcb0824ba3a0f92b50247c0, type: 2}
+  - {fileID: 11400000, guid: 8b6b4001da2b3f643a15afa1dd0403f1, type: 2}
+  - {fileID: 11400000, guid: 2835a7479f811b346bd2702e61c7c146, type: 2}
+  - {fileID: 11400000, guid: f25e95282082c4a408a981278ce32a27, type: 2}
+  - {fileID: 11400000, guid: b78cb1306404b764f8779e481aa309ea, type: 2}
+  - {fileID: 11400000, guid: f9fdd07994c67444d939b07d32853764, type: 2}
+  - {fileID: 11400000, guid: 1808146bcff151a4db9b86002f61bb9b, type: 2}
+  - {fileID: 11400000, guid: 90738442b7776bb4ab302fc30211fd5e, type: 2}
+  - {fileID: 11400000, guid: c7a3d0fab78477644a0816e3502a3ce1, type: 2}
+  - {fileID: 11400000, guid: 54648ce16ad722f4eb61b3f8f629d342, type: 2}
+  - {fileID: 11400000, guid: 8df3e54de70f320498fda13cbbb7b1e8, type: 2}

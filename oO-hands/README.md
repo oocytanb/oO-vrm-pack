@@ -24,3 +24,4 @@ MIT Licensed
 - 1.6.1: マテリアル設定の変更。
 - 2.0.0: ライセンスの変更。
 - 2.1.0: BlendShape の色を変更。
+- 3.0.0: BlendShape の Fun をハートに変更。

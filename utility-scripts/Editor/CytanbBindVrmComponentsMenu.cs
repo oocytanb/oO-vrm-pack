@@ -54,134 +54,89 @@ namespace cytanb
                 if (!prefab)
                 {
                     var msg = "[Warning] " + root.name + ".prefab was not found.";
-                    longMsg += msg + "\n";
+                    Debug.LogWarning(msg);
+                    ShowNotificationMessage(msg);
+                    return;
                 }
 
-                
                 Undo.RecordObject(root, ACTION_NAME);
 
                 // Meta
-                SerializedObject serMeta = null;
-#if true
-                // refer MetaObject of prefab
-                if (prefab)
                 {
-                    var prefabComponent = prefab.GetComponent<VRMMeta>();
-                    if (prefabComponent && prefabComponent.Meta)
+                    var destComponent = root.GetComponent<VRMMeta>();
+                    if (destComponent)
                     {
-                        serMeta = new SerializedObject(prefabComponent.Meta);
-                        var targetThumbnail = ResolveThumbnail(prefabComponent.Meta.Thumbnail, prefab);
-                        if (targetThumbnail != prefabComponent.Meta.Thumbnail)
-                        {
-                            var serThumbnail = serMeta.FindProperty("Thumbnail");
-                            serThumbnail.objectReferenceValue = targetThumbnail;
-                            serMeta.ApplyModifiedProperties();
-
-                            var msg = "[OK] VRM Meta thumbnail was replaced.";
-                            longMsg += msg + "\n";
-                            Debug.Log(msg);
-                        }
-                    }
-                }
-
-#else
-                // generate MetaObject (deprecated)
-                {
-                    var gltf = new glTF();
-                    var meta = ScriptableObject.CreateInstance<VRMMetaObject>();
-                    meta.name = "Meta";
-                    meta.ExporterVersion = gltf.extensions.VRM.exporterVersion;
-                    meta.Title = root.name;
-                    serMeta = new SerializedObject(meta);
-                }
-#endif
-
-                var metaComponent = root.GetComponent<VRMMeta>();
-                if (metaComponent && metaComponent.Meta)
-                {
-                    var msg = "[Skip] VRM Meta component already exists.";
-                    longMsg += msg + "\n";
-                    Debug.Log(msg);
-                }
-                else
-                {
-                    if (!metaComponent)
-                    {
-                        metaComponent = Undo.AddComponent<VRMMeta>(root);
-                    }
-
-                    if (serMeta != null)
-                    {
-                        metaComponent.Meta = (VRMMetaObject) serMeta.targetObject;
-
-                        var msg = "[OK] VRM Meta component was bound.";
+                        var msg = "[Skip] VRM Meta component already exists.";
                         longMsg += msg + "\n";
                         Debug.Log(msg);
                     }
                     else
                     {
-                        var msg = "[Warning] Empty VRM Meta component was created.";
-                        longMsg += msg + "\n";
-                        Debug.LogWarning(msg);
+                        var meta = CopyComponent<VRMMeta>(prefab, root);
+                        if (meta)
+                        {
+                            var msg = "[OK] VRM Meta component was bound.";
+                            longMsg += msg + "\n";
+                            Debug.Log(msg);
+
+                            // replace thumbnail
+                            var targetThumbnail = ResolveThumbnail(meta.Meta.Thumbnail, prefab);
+                            if (targetThumbnail != meta.Meta.Thumbnail)
+                            {
+                                var serMeta = new SerializedObject(meta.Meta);
+                                var serThumbnail = serMeta.FindProperty("Thumbnail");
+                                serThumbnail.objectReferenceValue = targetThumbnail;
+                                serMeta.ApplyModifiedProperties();
+
+                                var thumbMsg = "[OK] VRM Meta thumbnail was replaced.";
+                                longMsg += thumbMsg + "\n";
+                                Debug.Log(thumbMsg);
+                            }
+                        }
                     }
                 }
 
-                // BlendShape
-                BlendShapeAvatar blendShapeAvatar = null;
-#if true
-                // refer BlendShapeAvatar of prefab
-                if (prefab)
-                {
-                    var prefabComponent = prefab.GetComponent<VRMBlendShapeProxy>();
-                    if (prefabComponent)
-                    {
-                        blendShapeAvatar = prefabComponent.BlendShapeAvatar;
-                    }
-                }
-#else
-                // generate BlendShapeAvatar (deprecated)
-                blendShapeAvatar = ScriptableObject.CreateInstance<BlendShapeAvatar>();
-                blendShapeAvatar.name = "BlendShape";
-                blendShapeAvatar.CreateDefaultPreset();
+                // Humanoid Description
+                // if (root.GetComponent<VRMHumanoidDescription>())
+                // {
+                //     var msg = "[Skip] VRM Humanoid Description component already exists.";
+                //     longMsg += msg + "\n";
+                //     Debug.Log(msg);
+                // }
+                // else if (CopyComponent<VRMHumanoidDescription>(prefab, root))
+                // {
+                //     var msg = "[OK] VRM Humanoid Description component was bound.";
+                //     longMsg += msg + "\n";
+                //     Debug.Log(msg);
+                // }
 
-                foreach (var clip in blendShapeAvatar.Clips)
-                {
-                    clip.Prefab = root;
-                }
-#endif
-
-                var blendShapeAvatarComponent = root.GetComponent<VRMBlendShapeProxy>();
-                if (blendShapeAvatarComponent && blendShapeAvatarComponent.BlendShapeAvatar)
+                // Blend Shape Proxy
+                if (root.GetComponent<VRMBlendShapeProxy>())
                 {
                     var msg = "[Skip] VRM Blend Shape Proxy component already exists.";
                     longMsg += msg + "\n";
                     Debug.Log(msg);
                 }
-                else
+                else if (CopyComponent<VRMBlendShapeProxy>(prefab, root))
                 {
-                    if (!blendShapeAvatarComponent)
-                    {
-                        blendShapeAvatarComponent = Undo.AddComponent<VRMBlendShapeProxy>(root);
-                    }
-
-                    if (blendShapeAvatar)
-                    {
-                        var serBlendShapeAvatarComponent = new SerializedObject(blendShapeAvatarComponent);
-                        var serBlendShapeAvatar = serBlendShapeAvatarComponent.FindProperty("BlendShapeAvatar");
-                        serBlendShapeAvatar.objectReferenceValue = blendShapeAvatar;
-                        serBlendShapeAvatarComponent.ApplyModifiedProperties();
-
-                        var msg = "[OK] VRM Blend Shape Proxy component was bound.";
-                        longMsg += msg + "\n";
-                        Debug.Log(msg);
-                    }
-                    else
-                    {
-                        var msg = "[Warning] VRM Blend Shape Proxy component was created.";
-                        longMsg += msg + "\n";
-                        Debug.LogWarning(msg);
-                    }
+                    var msg = "[OK] VRM Blend Shape Proxy component was bound.";
+                    longMsg += msg + "\n";
+                    Debug.Log(msg);
                 }
+
+                // FirstPerson
+                // if (root.GetComponent<VRMFirstPerson>())
+                // {
+                //     var msg = "[Skip] VRM First Person component already exists.";
+                //     longMsg += msg + "\n";
+                //     Debug.Log(msg);
+                // }
+                // else if (CopyComponent<VRMFirstPerson>(prefab, root))
+                // {
+                //     var msg = "[OK] VRM First Person component was bound.";
+                //     longMsg += msg + "\n";
+                //     Debug.Log(msg);
+                // }
 
                 // secondary
                 if (root.transform.Find("secondary"))
@@ -192,36 +147,20 @@ namespace cytanb
                 }
                 else
                 {
-                    GameObject secondary = null;
-                    if (prefab)
+                    var prefabSecondary = prefab.transform.Find("secondary").gameObject;
+                    if (prefabSecondary)
                     {
-                        var prefabSecondary = prefab.transform.Find("secondary").gameObject;
-                        if (prefabSecondary)
-                        {
-                            secondary = GameObject.Instantiate(prefabSecondary);
-                            secondary.transform.SetParent(root.transform, false);
-                            secondary.transform.localPosition = prefabSecondary.transform.localPosition;
-                            secondary.transform.localScale = prefabSecondary.transform.localScale;
-                            secondary.name = "secondary";
-
-                            var msg = "[OK] secondary object was cloned.";
-                            longMsg += msg + "\n";
-                            Debug.Log(msg);
-                        }
-                    }
-
-                    if (!secondary)
-                    {
-                        secondary = new GameObject("secondary");
+                        GameObject secondary = GameObject.Instantiate(prefabSecondary);
                         secondary.transform.SetParent(root.transform, false);
-                        secondary.AddComponent<VRMSpringBone>();
+                        secondary.transform.localPosition = prefabSecondary.transform.localPosition;
+                        secondary.transform.localScale = prefabSecondary.transform.localScale;
+                        secondary.name = "secondary";
+                        Undo.RegisterCreatedObjectUndo(secondary, ACTION_NAME);
 
-                        var msg = "[Warning] Empty secondary object was created.";
+                        var msg = "[OK] secondary object was cloned.";
                         longMsg += msg + "\n";
-                        Debug.LogWarning(msg);
+                        Debug.Log(msg);
                     }
-
-                    Undo.RegisterCreatedObjectUndo(secondary, ACTION_NAME);
                 }
 
                 Undo.CollapseUndoOperations(groupId);
@@ -234,8 +173,36 @@ namespace cytanb
 
             if (!string.IsNullOrEmpty(longMsg))
             {
-                var assembly = typeof(UnityEditor.EditorWindow).Assembly;
-                EditorWindow.GetWindow(assembly.GetType("UnityEditor.ProjectBrowser")).ShowNotification(new GUIContent(longMsg));
+                ShowNotificationMessage(longMsg);
+            }
+        }
+
+        private static void ShowNotificationMessage(string msg)
+        {
+            var assembly = typeof(UnityEditor.EditorWindow).Assembly;
+            EditorWindow.GetWindow(assembly.GetType("UnityEditor.SceneView")).ShowNotification(new GUIContent(msg));
+        }
+
+        private static T CopyComponent<T>(GameObject src, GameObject dest) where T : Component
+        {
+            T srcComponent = src.GetComponent<T>();
+            if (srcComponent == null)
+            {
+                return srcComponent;
+            }
+
+            T destComponent = dest.GetComponent<T>();
+            if (destComponent == null)
+            {
+                UnityEditorInternal.ComponentUtility.CopyComponent(srcComponent);
+                UnityEditorInternal.ComponentUtility.PasteComponentAsNew(dest);
+                return dest.GetComponent<T>();
+            }
+            else
+            {
+                UnityEditorInternal.ComponentUtility.CopyComponent(srcComponent);
+                UnityEditorInternal.ComponentUtility.PasteComponentValues(destComponent);
+                return destComponent;
             }
         }
 
