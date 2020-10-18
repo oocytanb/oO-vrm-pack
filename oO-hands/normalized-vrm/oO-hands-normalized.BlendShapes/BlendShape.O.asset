@@ -16,8 +16,8 @@ MonoBehaviour:
   BlendShapeName: O
   Preset: 6
   Values:
-  - RelativePath: oo_cylinder_body
-    Index: 4
+  - RelativePath: oo_cylinder_body/oo_viseme
+    Index: 8
     Weight: 100
   MaterialValues: []
   IsBinary: 0

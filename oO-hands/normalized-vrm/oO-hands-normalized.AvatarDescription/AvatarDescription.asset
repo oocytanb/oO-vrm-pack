@@ -182,6 +182,27 @@ MonoBehaviour:
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
+  - humanBone: 30
+    boneName: Character_Fingers_Middle_Proximal_L
+    useDefaultValues: 1
+    min: {x: 0, y: 0, z: 0}
+    max: {x: 0, y: 0, z: 0}
+    center: {x: 0, y: 0, z: 0}
+    axisLength: 0
+  - humanBone: 33
+    boneName: Character_Fingers_Ring_Proximal_L
+    useDefaultValues: 1
+    min: {x: 0, y: 0, z: 0}
+    max: {x: 0, y: 0, z: 0}
+    center: {x: 0, y: 0, z: 0}
+    axisLength: 0
+  - humanBone: 36
+    boneName: Character_Fingers_Little_Proximal_L
+    useDefaultValues: 1
+    min: {x: 0, y: 0, z: 0}
+    max: {x: 0, y: 0, z: 0}
+    center: {x: 0, y: 0, z: 0}
+    axisLength: 0
   - humanBone: 28
     boneName: Character_Fingers_Index_Intermediate_L
     useDefaultValues: 1
@@ -191,13 +212,6 @@ MonoBehaviour:
     axisLength: 0
   - humanBone: 29
     boneName: Character_Fingers_Index_Distal_L
-    useDefaultValues: 1
-    min: {x: 0, y: 0, z: 0}
-    max: {x: 0, y: 0, z: 0}
-    center: {x: 0, y: 0, z: 0}
-    axisLength: 0
-  - humanBone: 30
-    boneName: Character_Fingers_Middle_Proximal_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
@@ -217,13 +231,6 @@ MonoBehaviour:
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
-  - humanBone: 33
-    boneName: Character_Fingers_Ring_Proximal_L
-    useDefaultValues: 1
-    min: {x: 0, y: 0, z: 0}
-    max: {x: 0, y: 0, z: 0}
-    center: {x: 0, y: 0, z: 0}
-    axisLength: 0
   - humanBone: 34
     boneName: Character_Fingers_Ring_Intermediate_L
     useDefaultValues: 1
@@ -238,20 +245,6 @@ MonoBehaviour:
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
-  - humanBone: 36
-    boneName: Character_Fingers_Little_Proximal_L
-    useDefaultValues: 1
-    min: {x: 0, y: 0, z: 0}
-    max: {x: 0, y: 0, z: 0}
-    center: {x: 0, y: 0, z: 0}
-    axisLength: 0
-  - humanBone: 38
-    boneName: Character_Fingers_Little_Distal_L
-    useDefaultValues: 1
-    min: {x: 0, y: 0, z: 0}
-    max: {x: 0, y: 0, z: 0}
-    center: {x: 0, y: 0, z: 0}
-    axisLength: 0
   - humanBone: 37
     boneName: Character_Fingers_Little_Intermediate_L
     useDefaultValues: 1
@@ -259,22 +252,8 @@ MonoBehaviour:
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
-  - humanBone: 39
-    boneName: Character_Fingers_Thumb_Proximal_R
-    useDefaultValues: 1
-    min: {x: 0, y: 0, z: 0}
-    max: {x: 0, y: 0, z: 0}
-    center: {x: 0, y: 0, z: 0}
-    axisLength: 0
-  - humanBone: 40
-    boneName: Character_Fingers_Thumb_Intermediate_R
-    useDefaultValues: 1
-    min: {x: 0, y: 0, z: 0}
-    max: {x: 0, y: 0, z: 0}
-    center: {x: 0, y: 0, z: 0}
-    axisLength: 0
-  - humanBone: 41
-    boneName: Character_Fingers_Thumb_Distal_R
+  - humanBone: 38
+    boneName: Character_Fingers_Little_Distal_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
@@ -322,8 +301,36 @@ MonoBehaviour:
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
+  - humanBone: 39
+    boneName: Character_Fingers_Thumb_Proximal_R
+    useDefaultValues: 1
+    min: {x: 0, y: 0, z: 0}
+    max: {x: 0, y: 0, z: 0}
+    center: {x: 0, y: 0, z: 0}
+    axisLength: 0
   - humanBone: 48
     boneName: Character_Fingers_Ring_Proximal_R
+    useDefaultValues: 1
+    min: {x: 0, y: 0, z: 0}
+    max: {x: 0, y: 0, z: 0}
+    center: {x: 0, y: 0, z: 0}
+    axisLength: 0
+  - humanBone: 51
+    boneName: Character_Fingers_Little_Proximal_R
+    useDefaultValues: 1
+    min: {x: 0, y: 0, z: 0}
+    max: {x: 0, y: 0, z: 0}
+    center: {x: 0, y: 0, z: 0}
+    axisLength: 0
+  - humanBone: 40
+    boneName: Character_Fingers_Thumb_Intermediate_R
+    useDefaultValues: 1
+    min: {x: 0, y: 0, z: 0}
+    max: {x: 0, y: 0, z: 0}
+    center: {x: 0, y: 0, z: 0}
+    axisLength: 0
+  - humanBone: 41
+    boneName: Character_Fingers_Thumb_Distal_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
@@ -338,13 +345,6 @@ MonoBehaviour:
     axisLength: 0
   - humanBone: 50
     boneName: Character_Fingers_Ring_Distal_R
-    useDefaultValues: 1
-    min: {x: 0, y: 0, z: 0}
-    max: {x: 0, y: 0, z: 0}
-    center: {x: 0, y: 0, z: 0}
-    axisLength: 0
-  - humanBone: 51
-    boneName: Character_Fingers_Little_Proximal_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}

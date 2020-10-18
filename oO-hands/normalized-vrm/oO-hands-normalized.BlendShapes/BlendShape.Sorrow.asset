@@ -16,8 +16,8 @@ MonoBehaviour:
   BlendShapeName: Sorrow
   Preset: 10
   Values:
-  - RelativePath: oo_cylinder_body
-    Index: 7
+  - RelativePath: oo_cylinder_body/oo_emotion
+    Index: 2
     Weight: 100
   MaterialValues: []
   IsBinary: 0

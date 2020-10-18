@@ -25,3 +25,4 @@ MIT Licensed
 - 2.0.0: ライセンスの変更。
 - 2.1.0: BlendShape の色を変更。
 - 3.0.0: BlendShape の Fun をハートに変更。
+- 4.0.0: 全体の構造を変更。

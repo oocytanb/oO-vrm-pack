@@ -16,11 +16,8 @@ MonoBehaviour:
   BlendShapeName: Angry
   Preset: 9
   Values:
-  - RelativePath: oo_cylinder_body
-    Index: 6
-    Weight: 100
-  - RelativePath: oo_cylinder_body
-    Index: 8
+  - RelativePath: oo_cylinder_body/oo_emotion
+    Index: 1
     Weight: 100
   MaterialValues: []
   IsBinary: 1
