@@ -6,8 +6,8 @@
 
 ## Softwares / Assets
 
-- [Unity](https://unity3d.com/) 2018.4
+- [Unity](https://unity3d.com/) 2019.4
 - [UniVRM](https://github.com/vrm-c/UniVRM)
-- [Blender](https://www.blender.org/) 2.8
+- [Blender](https://www.blender.org/) 2.83
 - [M+ FONTS](https://mplus-fonts.osdn.jp/)
 - [自家製 Rounded M+](http://jikasei.me/font/rounded-mplus/)

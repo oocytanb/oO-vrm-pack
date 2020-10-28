@@ -476,6 +476,21 @@ ModelImporter:
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: oo_cylinder_body
+      parentName: oO-hands(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.000000052029872, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+    - name: oo_emotion
+      parentName: oo_cylinder_body
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.000000052029872, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+    - name: oo_viseme
+      parentName: oo_cylinder_body
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.000000052029872, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
     - name: oo_hands_character
       parentName: oO-hands(Clone)
       position: {x: -0, y: 0, z: 0}
@@ -529,7 +544,7 @@ ModelImporter:
     - name: Character_Fingers_Index_Proximal_L
       parentName: Character_Hand_L
       position: {x: -0.021591721, y: 0.06283138, z: 0.0041758176}
-      rotation: {x: -0.0333962, y: 0.036897883, z: 0.026614094, w: 0.9984062}
+      rotation: {x: -0.033396203, y: 0.036897883, z: 0.026614096, w: 0.9984062}
       scale: {x: 1, y: 1, z: 1}
     - name: Character_Fingers_Index_Intermediate_L
       parentName: Character_Fingers_Index_Proximal_L
@@ -544,7 +559,7 @@ ModelImporter:
     - name: Character_Fingers_Little_Proximal_L
       parentName: Character_Hand_L
       position: {x: 0.023052592, y: 0.061112434, z: 0.0013068742}
-      rotation: {x: -0.03534406, y: 0.035036493, z: -0.02745574, w: 0.9983834}
+      rotation: {x: -0.016673775, y: 0.03514301, z: -0.010740171, w: 0.99918556}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Character_Fingers_Little_Intermediate_L
       parentName: Character_Fingers_Little_Proximal_L
@@ -574,7 +589,7 @@ ModelImporter:
     - name: Character_Fingers_Ring_Proximal_L
       parentName: Character_Hand_L
       position: {x: 0.0087672025, y: 0.061854646, z: 0.002623703}
-      rotation: {x: -0.03440132, y: 0.0359626, z: -0.0009370005, w: 0.9987604}
+      rotation: {x: -0.02745845, y: 0.036135327, z: 0.0027497238, w: 0.99896586}
       scale: {x: 0.99999994, y: 1, z: 1}
     - name: Character_Fingers_Ring_Intermediate_L
       parentName: Character_Fingers_Ring_Proximal_L
@@ -589,7 +604,7 @@ ModelImporter:
     - name: Character_Fingers_Thumb_Proximal_L
       parentName: Character_Hand_L
       position: {x: -0.021944564, y: 0.0048850933, z: -0.0040596714}
-      rotation: {x: -0.10995894, y: 0.14006357, z: 0.34506613, w: 0.9215317}
+      rotation: {x: -0.07688187, y: 0.15445064, z: 0.37599364, w: 0.91041917}
       scale: {x: 1, y: 1.0000001, z: 1.0000001}
     - name: Character_Fingers_Thumb_Intermediate_L
       parentName: Character_Fingers_Thumb_Proximal_L
@@ -624,7 +639,7 @@ ModelImporter:
     - name: Character_Fingers_Index_Proximal_R
       parentName: Character_Hand_R
       position: {x: 0.021591723, y: 0.062831394, z: 0.004175806}
-      rotation: {x: -0.033396207, y: -0.036897875, z: -0.026614068, w: 0.9984062}
+      rotation: {x: -0.03339621, y: -0.036897875, z: -0.02661407, w: 0.9984062}
       scale: {x: 1, y: 1, z: 1}
     - name: Character_Fingers_Index_Intermediate_R
       parentName: Character_Fingers_Index_Proximal_R
@@ -639,7 +654,7 @@ ModelImporter:
     - name: Character_Fingers_Little_Proximal_R
       parentName: Character_Hand_R
       position: {x: -0.02305259, y: 0.06111233, z: 0.0013068604}
-      rotation: {x: -0.03534408, y: -0.0350365, z: 0.027455734, w: 0.9983834}
+      rotation: {x: -0.016675016, y: -0.035142895, z: 0.010740895, w: 0.99918544}
       scale: {x: 0.99999994, y: 0.9999999, z: 1}
     - name: Character_Fingers_Little_Intermediate_R
       parentName: Character_Fingers_Little_Proximal_R
@@ -669,7 +684,7 @@ ModelImporter:
     - name: Character_Fingers_Ring_Proximal_R
       parentName: Character_Hand_R
       position: {x: -0.008767357, y: 0.06185596, z: 0.0026234582}
-      rotation: {x: -0.034399506, y: -0.035960864, z: 0.0009346162, w: 0.9987605}
+      rotation: {x: -0.027461484, y: -0.0361334, z: -0.0027497455, w: 0.99896586}
       scale: {x: 1, y: 1, z: 1.0000001}
     - name: Character_Fingers_Ring_Intermediate_R
       parentName: Character_Fingers_Ring_Proximal_R
@@ -684,7 +699,7 @@ ModelImporter:
     - name: Character_Fingers_Thumb_Proximal_R
       parentName: Character_Hand_R
       position: {x: 0.021944579, y: 0.004885046, z: -0.00405968}
-      rotation: {x: -0.10995887, y: -0.14006358, z: -0.34506625, w: 0.9215316}
+      rotation: {x: -0.076878704, y: -0.1544521, z: -0.37599516, w: 0.9104185}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: Character_Fingers_Thumb_Intermediate_R
       parentName: Character_Fingers_Thumb_Proximal_R
@@ -726,21 +741,6 @@ ModelImporter:
       position: {x: -0.0000010933727, y: 0.42558852, z: -0.0000002559973}
       rotation: {x: -0.57952076, y: 0.017607829, z: -0.003847228, w: 0.8147582}
       scale: {x: 0.99999994, y: 1, z: 1}
-    - name: oo_cylinder_body
-      parentName: oO-hands(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.000000052029872, y: 0, z: -0, w: 1}
-      scale: {x: 1, y: 1.0000002, z: 1.0000002}
-    - name: oo_emotion
-      parentName: oO-hands(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.000000052029872, y: 0, z: -0, w: 1}
-      scale: {x: 1, y: 1.0000002, z: 1.0000002}
-    - name: oo_viseme
-      parentName: oO-hands(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: -0.000000052029872, y: 0, z: -0, w: 1}
-      scale: {x: 1, y: 1.0000002, z: 1.0000002}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
