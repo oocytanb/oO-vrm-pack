@@ -16,8 +16,8 @@ MonoBehaviour:
   BlendShapeName: Fun
   Preset: 11
   Values:
-  - RelativePath: oo_cylinder_body
-    Index: 9
+  - RelativePath: oo_cylinder_body/oo_emotion
+    Index: 3
     Weight: 100
   MaterialValues: []
   IsBinary: 1

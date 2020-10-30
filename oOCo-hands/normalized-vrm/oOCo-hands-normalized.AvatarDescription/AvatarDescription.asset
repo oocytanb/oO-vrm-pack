@@ -29,14 +29,14 @@ MonoBehaviour:
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 2
-    boneName: Character_UpperLeg.R
+    boneName: Character_UpperLeg_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 4
-    boneName: Character_LowerLeg.R
+    boneName: Character_LowerLeg_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
@@ -50,28 +50,28 @@ MonoBehaviour:
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 12
-    boneName: Character_Shoulder.R
+    boneName: Character_Shoulder_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 14
-    boneName: Character_UpperArm.R
+    boneName: Character_UpperArm_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 16
-    boneName: Character_LowerArm.R
+    boneName: Character_LowerArm_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 18
-    boneName: Character_Hand.R
+    boneName: Character_Hand_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
@@ -92,28 +92,28 @@ MonoBehaviour:
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 11
-    boneName: Character_Shoulder.L
+    boneName: Character_Shoulder_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 13
-    boneName: Character_UpperArm.L
+    boneName: Character_UpperArm_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 15
-    boneName: Character_LowerArm.L
+    boneName: Character_LowerArm_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 17
-    boneName: Character_Hand.L
+    boneName: Character_Hand_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
@@ -127,238 +127,238 @@ MonoBehaviour:
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 1
-    boneName: Character_UpperLeg.L
+    boneName: Character_UpperLeg_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 3
-    boneName: Character_LowerLeg.L
+    boneName: Character_LowerLeg_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 5
-    boneName: Character_Foot.L_end
+    boneName: Character_Foot_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 6
-    boneName: Character_Foot.R_end
+    boneName: Character_Foot_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 27
-    boneName: Character_Fingers_Index_Proximal.L
+    boneName: Character_Fingers_Index_Proximal_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 28
-    boneName: Character_Fingers_Index_Intermediate.L
+    boneName: Character_Fingers_Index_Intermediate_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 29
-    boneName: Character_Fingers_Index_Distal.L
+    boneName: Character_Fingers_Index_Distal_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 36
-    boneName: Character_Fingers_Little_Proximal.L
+    boneName: Character_Fingers_Little_Proximal_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 37
-    boneName: Character_Fingers_Little_Intermediate.L
+    boneName: Character_Fingers_Little_Intermediate_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 38
-    boneName: Character_Fingers_Little_Distal.L
+    boneName: Character_Fingers_Little_Distal_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 33
-    boneName: Character_Fingers_Ring_Proximal.L
+    boneName: Character_Fingers_Ring_Proximal_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 35
-    boneName: Character_Fingers_Ring_Distal.L
+    boneName: Character_Fingers_Ring_Distal_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 34
-    boneName: Character_Fingers_Ring_Intermediate.L
+    boneName: Character_Fingers_Ring_Intermediate_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 30
-    boneName: Character_Fingers_Middle_Proximal.L
+    boneName: Character_Fingers_Middle_Proximal_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 32
-    boneName: Character_Fingers_Middle_Distal.L
+    boneName: Character_Fingers_Middle_Distal_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 31
-    boneName: Character_Fingers_Middle_Intermediate.L
+    boneName: Character_Fingers_Middle_Intermediate_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 24
-    boneName: Character_Fingers_Thumb_Proximal.L
+    boneName: Character_Fingers_Thumb_Proximal_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 25
-    boneName: Character_Fingers_Thumb_Intermediate.L
+    boneName: Character_Fingers_Thumb_Intermediate_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 26
-    boneName: Character_Fingers_Thumb_Distal.L
+    boneName: Character_Fingers_Thumb_Distal_L
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 39
-    boneName: Character_Fingers_Thumb_Proximal.R
+    boneName: Character_Fingers_Thumb_Proximal_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 40
-    boneName: Character_Fingers_Thumb_Intermediate.R
+    boneName: Character_Fingers_Thumb_Intermediate_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 41
-    boneName: Character_Fingers_Thumb_Distal.R
+    boneName: Character_Fingers_Thumb_Distal_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 42
-    boneName: Character_Fingers_Index_Proximal.R
+    boneName: Character_Fingers_Index_Proximal_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 43
-    boneName: Character_Fingers_Index_Intermediate.R
+    boneName: Character_Fingers_Index_Intermediate_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 44
-    boneName: Character_Fingers_Index_Distal.R
+    boneName: Character_Fingers_Index_Distal_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 45
-    boneName: Character_Fingers_Middle_Proximal.R
+    boneName: Character_Fingers_Middle_Proximal_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 46
-    boneName: Character_Fingers_Middle_Intermediate.R
+    boneName: Character_Fingers_Middle_Intermediate_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 47
-    boneName: Character_Fingers_Middle_Distal.R
+    boneName: Character_Fingers_Middle_Distal_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 48
-    boneName: Character_Fingers_Ring_Proximal.R
+    boneName: Character_Fingers_Ring_Proximal_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 49
-    boneName: Character_Fingers_Ring_Intermediate.R
+    boneName: Character_Fingers_Ring_Intermediate_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 50
-    boneName: Character_Fingers_Ring_Distal.R
+    boneName: Character_Fingers_Ring_Distal_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 51
-    boneName: Character_Fingers_Little_Proximal.R
+    boneName: Character_Fingers_Little_Proximal_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 52
-    boneName: Character_Fingers_Little_Intermediate.R
+    boneName: Character_Fingers_Little_Intermediate_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}
     center: {x: 0, y: 0, z: 0}
     axisLength: 0
   - humanBone: 53
-    boneName: Character_Fingers_Little_Distal.R
+    boneName: Character_Fingers_Little_Distal_R
     useDefaultValues: 1
     min: {x: 0, y: 0, z: 0}
     max: {x: 0, y: 0, z: 0}

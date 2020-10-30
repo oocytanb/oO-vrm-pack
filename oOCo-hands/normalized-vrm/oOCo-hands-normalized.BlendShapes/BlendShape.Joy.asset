@@ -16,8 +16,8 @@ MonoBehaviour:
   BlendShapeName: Joy
   Preset: 8
   Values:
-  - RelativePath: oo_cylinder_body
-    Index: 5
+  - RelativePath: oo_cylinder_body/oo_emotion
+    Index: 0
     Weight: 100
   MaterialValues: []
   IsBinary: 1
