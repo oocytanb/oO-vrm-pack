@@ -1,17 +1,17 @@
 {
-    "name": "cytanb-vrm-utility.Editor",
+    "name": "Unity.oO-vrm-pack.Editor",
     "references": [
         "GUID:05dd262a0c0a2f841b8252c8c3815582"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": false,
-    "defineConstraints": [],
+    "defineConstraints": [
+        "UNITY_EDITOR"
+    ],
     "versionDefines": [],
     "noEngineReferences": false
 }
