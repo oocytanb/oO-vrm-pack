@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1105 &110500000
+HumanTemplate:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: oO-nyan-HumanTemplate
+  m_BoneTemplate:
+    Chest: Chest
+    Head: Head
+    Hips: Hips
+    Left Index Distal: LeftIndexDistal
+    Left Index Intermediate: LeftIndexIntermediate
+    Left Index Proximal: LeftIndexProximal
+    Left Little Distal: LeftLittleDistal
+    Left Little Intermediate: LeftLittleIntermediate
+    Left Little Proximal: LeftLittleProximal
+    Left Middle Distal: LeftMiddleDistal
+    Left Middle Intermediate: LeftMiddleIntermediate
+    Left Middle Proximal: LeftMiddleProximal
+    Left Ring Distal: LeftRingDistal
+    Left Ring Intermediate: LeftRingIntermediate
+    Left Ring Proximal: LeftRingProximal
+    Left Thumb Distal: LeftThumbDistal
+    Left Thumb Intermediate: LeftThumbIntermediate
+    Left Thumb Proximal: LeftThumbProximal
+    LeftEye: LeftEye
+    LeftFoot: LeftFoot
+    LeftHand: LeftHand
+    LeftLowerArm: LeftLowerArm
+    LeftLowerLeg: LeftLowerLeg
+    LeftShoulder: LeftShoulder
+    LeftToes: LeftToes
+    LeftUpperArm: LeftUpperArm
+    LeftUpperLeg: LeftUpperLeg
+    Neck: Neck
+    Right Index Distal: RightIndexDistal
+    Right Index Intermediate: RightIndexIntermediate
+    Right Index Proximal: RightIndexProximal
+    Right Little Distal: RightLittleDistal
+    Right Little Intermediate: RightLittleIntermediate
+    Right Little Proximal: RightLittleProximal
+    Right Middle Distal: RightMiddleDistal
+    Right Middle Intermediate: RightMiddleIntermediate
+    Right Middle Proximal: Right Middle Proximal
+    Right Ring Distal: RightRingDistal
+    Right Ring Intermediate: RightRingIntermediate
+    Right Ring Proximal: RightRingProximal
+    Right Thumb Distal: RightThumbDistal
+    Right Thumb Intermediate: RightThumbIntermediate
+    Right Thumb Proximal: RightThumbProximal
+    RightEye: RightEye
+    RightFoot: RightFoot
+    RightHand: RightHand
+    RightLowerArm: RightLowerArm
+    RightLowerLeg: RightLowerLeg
+    RightShoulder: RightShoulder
+    RightToes: RightToes
+    RightUpperArm: RightUpperArm
+    RightUpperLeg: RightUpperLeg
+    Spine: Spine

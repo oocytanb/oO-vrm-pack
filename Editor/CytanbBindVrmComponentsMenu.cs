@@ -6,7 +6,6 @@
 using System.IO;
 using UnityEditor;
 using UnityEngine;
-using UniGLTF;
 using VRM;
 
 namespace cytanb
