@@ -7,6 +7,27 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 271005681333489398, guid: 00eb581acb8631843b36d4d833f7b331,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2567ab4e41e5adb4191f59b15ac9961e, type: 2}
+    - target: {fileID: 1882340154624339421, guid: 00eb581acb8631843b36d4d833f7b331,
+        type: 3}
+      propertyPath: Meta
+      value: 
+      objectReference: {fileID: 11400000, guid: dc3ead984ad704c46b2b797ee419460b,
+        type: 2}
+    - target: {fileID: 6127736659910081969, guid: 00eb581acb8631843b36d4d833f7b331,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2567ab4e41e5adb4191f59b15ac9961e, type: 2}
+    - target: {fileID: 6583226924476182363, guid: 00eb581acb8631843b36d4d833f7b331,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2567ab4e41e5adb4191f59b15ac9961e, type: 2}
     - target: {fileID: 8483883510366472688, guid: 00eb581acb8631843b36d4d833f7b331,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -65,7 +86,7 @@ PrefabInstance:
     - target: {fileID: 9148816038824006474, guid: 00eb581acb8631843b36d4d833f7b331,
         type: 3}
       propertyPath: m_Name
-      value: oO-nyan
+      value: oO-kagemaru
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00eb581acb8631843b36d4d833f7b331, type: 3}

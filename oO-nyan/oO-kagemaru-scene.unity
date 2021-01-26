@@ -121,12 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &722370405 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6787713151524008918, guid: 9355aa4c2ccf84146a03b301e724d9db,
-    type: 3}
-  m_PrefabInstance: {fileID: 1363256931}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &915396587
 GameObject:
   m_ObjectHideFlags: 0
@@ -210,23 +204,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1363256931
+--- !u!1001 &1809563434
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 48352888305334515, guid: 9355aa4c2ccf84146a03b301e724d9db,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2567ab4e41e5adb4191f59b15ac9961e, type: 2}
-    - target: {fileID: 1080163206341143065, guid: 9355aa4c2ccf84146a03b301e724d9db,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2567ab4e41e5adb4191f59b15ac9961e, type: 2}
     - target: {fileID: 2314040619337092274, guid: 9355aa4c2ccf84146a03b301e724d9db,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -287,61 +271,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: oO-kagemaru
       objectReference: {fileID: 0}
-    - target: {fileID: 4561245205246771038, guid: 9355aa4c2ccf84146a03b301e724d9db,
-        type: 3}
-      propertyPath: RootBones.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4561245205246771038, guid: 9355aa4c2ccf84146a03b301e724d9db,
-        type: 3}
-      propertyPath: RootBones.Array.data[0]
-      value: 
-      objectReference: {fileID: 1410282119}
-    - target: {fileID: 4561245205246771038, guid: 9355aa4c2ccf84146a03b301e724d9db,
-        type: 3}
-      propertyPath: RootBones.Array.data[1]
-      value: 
-      objectReference: {fileID: 1684207466}
-    - target: {fileID: 4561245205246771038, guid: 9355aa4c2ccf84146a03b301e724d9db,
-        type: 3}
-      propertyPath: RootBones.Array.data[2]
-      value: 
-      objectReference: {fileID: 722370405}
-    - target: {fileID: 4561245205246771038, guid: 9355aa4c2ccf84146a03b301e724d9db,
-        type: 3}
-      propertyPath: m_stiffnessForce
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4561245205246771038, guid: 9355aa4c2ccf84146a03b301e724d9db,
-        type: 3}
-      propertyPath: m_dragForce
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5746235583371405471, guid: 9355aa4c2ccf84146a03b301e724d9db,
-        type: 3}
-      propertyPath: Meta
-      value: 
-      objectReference: {fileID: 11400000, guid: dc3ead984ad704c46b2b797ee419460b,
-        type: 2}
-    - target: {fileID: 6224852711761202100, guid: 9355aa4c2ccf84146a03b301e724d9db,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2567ab4e41e5adb4191f59b15ac9961e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9355aa4c2ccf84146a03b301e724d9db, type: 3}
---- !u!4 &1410282119 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2699405305134848243, guid: 9355aa4c2ccf84146a03b301e724d9db,
-    type: 3}
-  m_PrefabInstance: {fileID: 1363256931}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1684207466 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8301118977526975576, guid: 9355aa4c2ccf84146a03b301e724d9db,
-    type: 3}
-  m_PrefabInstance: {fileID: 1363256931}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1891381476
 GameObject:
   m_ObjectHideFlags: 0
