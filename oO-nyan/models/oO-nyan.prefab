@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_comment: 
-  m_drawGizmo: 0
+  m_drawGizmo: 1
   m_gizmoColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
   m_stiffnessForce: 1.5
   m_gravityPower: 0
@@ -55,7 +55,7 @@ MonoBehaviour:
   - {fileID: 8131220978488810929}
   - {fileID: 2779476395341269274}
   - {fileID: 834042871874877076}
-  m_hitRadius: 0.02
+  m_hitRadius: 0.05
   ColliderGroups: []
   m_updateType: 0
 --- !u!114 &494575315097499683
@@ -84,20 +84,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Meta: {fileID: 11400000, guid: de8be6db6f2284f4ba6401bb41beef9c, type: 2}
---- !u!114 &2622789293628725097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9148816038824006474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3869812175467a143ab9cd865752b4a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Avatar: {fileID: 9000000, guid: 75979b3ff3737a64b99d99a10a0c9fce, type: 3}
-  Description: {fileID: 0}
 --- !u!114 &6125000746216575421
 MonoBehaviour:
   m_ObjectHideFlags: 0
