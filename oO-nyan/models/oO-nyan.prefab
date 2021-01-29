@@ -55,7 +55,7 @@ MonoBehaviour:
   - {fileID: 3400389589501733120}
   - {fileID: 2634759415932430566}
   - {fileID: 3276952413706345113}
-  m_hitRadius: 0.03
+  m_hitRadius: 0.04
   ColliderGroups: []
   m_updateType: 0
 --- !u!114 &494575315097499683
