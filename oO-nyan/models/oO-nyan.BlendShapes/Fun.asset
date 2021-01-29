@@ -19,5 +19,8 @@ MonoBehaviour:
   - RelativePath: oo_cylinder_body/oo_emotion
     Index: 3
     Weight: 100
+  - RelativePath: oo_cylinder_body/oo_fpv
+    Index: 3
+    Weight: 100
   MaterialValues: []
   IsBinary: 1
