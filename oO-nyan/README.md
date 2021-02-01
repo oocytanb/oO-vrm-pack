@@ -6,6 +6,8 @@
 耳と尻尾つきの似顔絵を描いてくださり、
 ありがとうございます。
 
+[ニコニ立体](https://3d.nicovideo.jp/works/td75906)
+
 # oO-kagemaru
 
 oO-nyan の影武者でござる!
