@@ -52,7 +52,7 @@ MonoBehaviour:
   m_dragForce: 0.2
   m_center: {fileID: 0}
   RootBones: []
-  m_hitRadius: 0.04
+  m_hitRadius: 0.03
   ColliderGroups: []
   m_updateType: 0
 --- !u!114 &1423311566458054139
