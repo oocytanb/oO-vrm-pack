@@ -10,184 +10,184 @@ using VRM;
 
 namespace cytanb
 {
-    readonly struct ActionResult
+    public static class CytanbMakeVrmPrefabMenu
     {
-        public readonly bool success;
-        public readonly string value;
-
-        public static readonly ActionResult Complete = new ActionResult(true, "[OK] Complete!");
-
-        public static ActionResult Success(string value)
+        readonly struct ActionResult
         {
-            return new ActionResult(true, value);
-        }
+            public readonly bool success;
+            public readonly string value;
 
-        public static ActionResult Fail(string message)
-        {
-            return new ActionResult(false, $@"[Fail] {message}");
-        }
+            public static readonly ActionResult Complete = new ActionResult(true, "[OK] Complete!");
 
-        public ActionResult(bool success, string value)
-        {
-            this.success = success;
-            this.value = value;
-        }
-
-        public ActionResult AndThen(System.Func<string, ActionResult> f)
-        {
-            return success ? f(value) : this;
-        }
-    }
-
-    class AssetFile
-    {
-        private static readonly bool HasAltDirectorySeparatorChar = Path.DirectorySeparatorChar != Path.AltDirectorySeparatorChar;
-
-        private static readonly char[] DirectorySeparatorChars = HasAltDirectorySeparatorChar ?
-            new char[] { Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar } :
-            new char[] { Path.DirectorySeparatorChar };
-
-        private static readonly Regex ReplacePattern = new Regex(@"[/\\?|><:*""]", RegexOptions.Compiled);
-
-        public static readonly System.Func<string, string> Replace = (str) => ReplacePattern.Replace(str, "_");
-
-        public static readonly System.Func<string, string> Identity = (str) => str;
-
-        public readonly Object asset;
-        public readonly string path;
-        public readonly string name;
-        public readonly string dirName;
-        public readonly string fileName;
-        public readonly string extension;
-
-        public AssetFile(Object asset, string path)
-        {
-            if (!asset || string.IsNullOrEmpty(path))
+            public static ActionResult Success(string value)
             {
-                throw new System.ArgumentException();
+                return new ActionResult(true, value);
             }
 
-            this.asset = asset;
-
-            var np = NormalizeAssetPath(path, Replace);
-            this.path = np;
-            name = Path.GetFileNameWithoutExtension(np);
-            dirName = NormalizeAssetPath(Path.GetDirectoryName(np));
-            fileName = Path.GetFileName(np);
-            extension = Path.GetExtension(np);
-        }
-
-		public static string NormalizeAssetPath(string path)
-        {
-            return NormalizeAssetPath(path, Identity);
-        }
-
-        /// <summary>
-		/// �^����ꂽ�p�X������𐳋K�����܂��B
-        /// �J�����g�f�B���N�g�� "." �Ɛe�f�B���N�g�� ".." ���������܂��B
-		/// �p�X��؂蕶���� "/" �ɒu�����܂��B
-        /// �A������p�X��؂蕶����A�����܂��B
-		/// �����̃p�X��؂蕶���͕ێ�����܂��B
-		/// null ���󕶎��񂪎w�肳�ꂽ�ꍇ�� "." ��Ԃ��܂��B
-		/// </summary>
-		/// <param name="path">�p�X������</param>
-		/// <param name="f">�p�X�̃Z�O�����g�������u����������֐�</param>
-		/// <returns>���K������������</returns>
-        public static string NormalizeAssetPath(string path, System.Func<string, string> f)
-        {
-            if (string.IsNullOrEmpty(path))
+            public static ActionResult Fail(string message)
             {
-                return ".";
+                return new ActionResult(false, $@"[Fail] {message}");
             }
 
-            var hc = path[0];
-            var isAbsolute = HasAltDirectorySeparatorChar ?
-                hc == Path.DirectorySeparatorChar || hc == Path.AltDirectorySeparatorChar :
-                hc == Path.DirectorySeparatorChar;
-            if (isAbsolute && path.Length == 1)
+            public ActionResult(bool success, string value)
             {
-                return "/";
+                this.success = success;
+                this.value = value;
             }
 
-            var tc = path[path.Length - 1];
-            var hasTrailingSeparator = HasAltDirectorySeparatorChar ?
-                tc == Path.DirectorySeparatorChar || tc == Path.AltDirectorySeparatorChar :
-                tc == Path.DirectorySeparatorChar;
-
-            var entries = path.Split(DirectorySeparatorChars, System.StringSplitOptions.RemoveEmptyEntries);
-            var stack = new Stack<string>(entries.Length);
-            foreach (var entry in entries)
+            public ActionResult AndThen(System.Func<string, ActionResult> f)
             {
-                var e = f(entry);
-                if (e == "..")
+                return success ? f(value) : this;
+            }
+        }
+
+        class AssetFile
+        {
+            private static readonly bool HasAltDirectorySeparatorChar = Path.DirectorySeparatorChar != Path.AltDirectorySeparatorChar;
+
+            private static readonly char[] DirectorySeparatorChars = HasAltDirectorySeparatorChar ?
+                new char[] { Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar } :
+                new char[] { Path.DirectorySeparatorChar };
+
+            private static readonly Regex ReplacePattern = new Regex(@"[/\\?|><:*""]", RegexOptions.Compiled);
+
+            public static readonly System.Func<string, string> Replace = (str) => ReplacePattern.Replace(str, "_");
+
+            public static readonly System.Func<string, string> Identity = (str) => str;
+
+            public readonly Object asset;
+            public readonly string path;
+            public readonly string name;
+            public readonly string dirName;
+            public readonly string fileName;
+            public readonly string extension;
+
+            public AssetFile(Object asset, string path)
+            {
+                if (!asset || string.IsNullOrEmpty(path))
                 {
-                    if (isAbsolute)
+                    throw new System.ArgumentException();
+                }
+
+                this.asset = asset;
+
+                var np = NormalizeAssetPath(path, Replace);
+                this.path = np;
+                name = Path.GetFileNameWithoutExtension(np);
+                dirName = NormalizeAssetPath(Path.GetDirectoryName(np));
+                fileName = Path.GetFileName(np);
+                extension = Path.GetExtension(np);
+            }
+
+            public static string NormalizeAssetPath(string path)
+            {
+                return NormalizeAssetPath(path, Identity);
+            }
+
+            /// <summary>
+            /// 与えられたパス文字列を正規化します。
+            /// カレントディレクトリ "." と親ディレクトリ ".." を解決します。
+            /// パス区切り文字を "/" に置換します。
+            /// 連続するパス区切り文字は 1 文字に連結します。
+            /// 末尾のパス区切り文字は保持されます。
+            /// null か空文字列が指定された場合は "." を返します。
+            /// </summary>
+            /// <param name="path">パス文字列</param>
+            /// <param name="f">パスセグメントをマップする関数</param>
+            /// <returns>正規化した文字列</returns>
+            public static string NormalizeAssetPath(string path, System.Func<string, string> f)
+            {
+                if (string.IsNullOrEmpty(path))
+                {
+                    return ".";
+                }
+
+                var hc = path[0];
+                var isAbsolute = HasAltDirectorySeparatorChar ?
+                    hc == Path.DirectorySeparatorChar || hc == Path.AltDirectorySeparatorChar :
+                    hc == Path.DirectorySeparatorChar;
+                if (isAbsolute && path.Length == 1)
+                {
+                    return "/";
+                }
+
+                var tc = path[path.Length - 1];
+                var hasTrailingSeparator = HasAltDirectorySeparatorChar ?
+                    tc == Path.DirectorySeparatorChar || tc == Path.AltDirectorySeparatorChar :
+                    tc == Path.DirectorySeparatorChar;
+
+                var entries = path.Split(DirectorySeparatorChars, System.StringSplitOptions.RemoveEmptyEntries);
+                var stack = new Stack<string>(entries.Length);
+                foreach (var entry in entries)
+                {
+                    var e = f(entry);
+                    if (e == "..")
                     {
-                        if (stack.Count >= 0)
+                        if (isAbsolute)
                         {
-                            stack.Pop();
-                        }
-                    }
-                    else
-                    {
-                        if (stack.Count >= 1 && stack.Peek() != "..")
-                        {
-                            stack.Pop();
+                            if (stack.Count >= 0)
+                            {
+                                stack.Pop();
+                            }
                         }
                         else
                         {
-                            stack.Push(e);
+                            if (stack.Count >= 1 && stack.Peek() != "..")
+                            {
+                                stack.Pop();
+                            }
+                            else
+                            {
+                                stack.Push(e);
+                            }
                         }
                     }
+                    else if (e != ".")
+                    {
+                        stack.Push(e);
+                    }
                 }
-                else if (e != ".")
+
+                if (stack.Count == 0)
                 {
-                    stack.Push(e);
+                    return isAbsolute ? "/" : hasTrailingSeparator ? "./" : ".";
                 }
+
+                var acc = stack.Pop() + (hasTrailingSeparator ? "/" : "");
+                foreach (var entry in stack)
+                {
+                    acc = entry + "/" + acc;
+                }
+
+                if (isAbsolute)
+                {
+                    acc = "/" + acc;
+                }
+
+                return acc;
             }
 
-            if (stack.Count == 0)
+            public GameObject AsGameObject()
             {
-                return isAbsolute ? "/" : hasTrailingSeparator ? "./" : ".";
+                return this.asset as GameObject;
             }
 
-            var acc = stack.Pop() + (hasTrailingSeparator ? "/" : "");
-            foreach (var entry in stack)
+            public AssetFile Child(Object childAsset, string childPath)
             {
-                acc = entry + "/" + acc;
+                return new AssetFile(childAsset, $@"{dirName}/{name}{childPath}");
             }
 
-            if (isAbsolute)
+            public void Create()
             {
-                acc = "/" + acc;
+                if (!Directory.Exists(dirName))
+                {
+                    Directory.CreateDirectory(dirName);
+                    AssetDatabase.Refresh();
+                }
+                AssetDatabase.CreateAsset(asset, path);
             }
-
-            return acc;
         }
 
-        public GameObject AsGameObject()
-        {
-            return this.asset as GameObject;
-        }
-
-        public AssetFile Child(Object childAsset, string childPath)
-        {
-            return new AssetFile(childAsset, $@"{dirName}/{name}{childPath}");
-        }
-
-        public void Create()
-        {
-            if (!Directory.Exists(dirName))
-            {
-                Directory.CreateDirectory(dirName);
-                AssetDatabase.Refresh();
-            }
-            AssetDatabase.CreateAsset(asset, path);
-        }
-    }
-
-    public static class CytanbMakeVrmPrefabMenu
-    {
         const string ActionName = "Make VRM Prefab";
         const string MenuItemKey = "Cytanb/" + ActionName;
         const string AssetExtension = ".asset";
