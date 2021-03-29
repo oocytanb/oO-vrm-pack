@@ -126,7 +126,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 1.6078432, g: 1.6078432, b: 1.6078432, a: 1}
+    - _EmissionColor: {r: 2, g: 2, b: 2, a: 1}
     - _OutlineColor: {r: 0.092, g: 0.09946667, b: 0.1, a: 1}
     - _RimColor: {r: 0, g: 0, b: 0, a: 1}
     - _ShadeColor: {r: 0.5128972, g: 0.55476636, b: 0.56, a: 1}
