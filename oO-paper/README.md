@@ -1,5 +1,5 @@
 # oO-paper
 
-紙製です。薄いです。16 ポリゴンです。髪の話はしていません。
+16 ポリゴンになった Nyan! 紙製だ Nyan!
 
-[ニコニ立体](https://3d.nicovideo.jp/works/td76425)
+[ニコニ立体](https://3d.nicovideo.jp/works/td76425 )

@@ -1,11 +1,16 @@
 {
   "name": "com.github.oocytanb.oo-vrm-pack",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "displayName": "oO-vrm-pack",
   "description": "oO-vrm-pack | MIT Licensed",
   "unity": "2019.4",
   "author": {
     "name": "oO",
     "url": "https://github.com/oocytanb/"
+  },
+  "dependencies": {
+    "com.vrmc.unigltf": "https://github.com/vrm-c/UniVRM.git?path=/Assets/UniGLTF#v0.67.4",
+    "com.vrmc.univrm": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRM#v0.67.4",
+    "com.vrmc.vrmshaders": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRMShaders#v0.67.4"
   }
 }

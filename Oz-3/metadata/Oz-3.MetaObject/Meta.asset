@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Meta
   m_EditorClassIdentifier: 
   ExporterVersion: 
-  Title: oO-nyan
-  Version: 6.0.0
+  Title: Oz-3
+  Version: 7.0.0
   Author: oO
   ContactInformation: https://github.com/oocytanb
   Reference: https://github.com/oocytanb
-  Thumbnail: {fileID: 2800000, guid: c1a94738d6b2a3144be596c9ac314720, type: 3}
+  Thumbnail: {fileID: 2800000, guid: cd2ccf420de68524993e8aca6ba39f33, type: 3}
   AllowedUser: 2
   ViolentUssage: 1
   SexualUssage: 1

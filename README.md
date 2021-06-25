@@ -2,7 +2,15 @@
 
 このプロジェクトは、[VRM](https://vrm.dev/) のアセットパックです。
 
-[cytanb-vrm-works](https://github.com/oocytanb/cytanb-vrm-works) は関連するプロジェクトです。
+[cytanb-tso-collab](https://github.com/oocytanb/cytanb-tso-collab) は関連するプロジェクトです。
+
+## UPM
+
+`Package Manager > Add package from gi URL..`
+
+```
+https://github.com/oocytanb/oO-vrm-pack.git#2019.4
+```
 
 ## Softwares / Assets
 

@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Meta
   m_EditorClassIdentifier: 
   ExporterVersion: 
-  Title: oO-kagemaru
-  Version: 6.0.0
+  Title: oO-paper
+  Version: 7.0.0
   Author: oO
   ContactInformation: https://github.com/oocytanb
   Reference: https://github.com/oocytanb
-  Thumbnail: {fileID: 2800000, guid: a9fbc583e4f72ee4ea57f7464318b0ac, type: 3}
+  Thumbnail: {fileID: 2800000, guid: 7641cbc221eebc347b9699eec90294a8, type: 3}
   AllowedUser: 2
   ViolentUssage: 1
   SexualUssage: 1

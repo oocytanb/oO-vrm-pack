@@ -4,4 +4,4 @@
 
 oU (読み: おゆ) と双子です。
 
-[ニコニ立体](https://3d.nicovideo.jp/works/td78078)
+[ニコニ立体](https://3d.nicovideo.jp/works/td78078 )

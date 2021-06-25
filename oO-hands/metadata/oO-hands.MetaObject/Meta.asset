@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Meta
   m_EditorClassIdentifier: 
   ExporterVersion: 
-  Title: oOCo-hands
-  Version: 6.0.0
+  Title: oO-hands
+  Version: 7.0.0
   Author: oO
   ContactInformation: https://github.com/oocytanb
   Reference: https://github.com/oocytanb
-  Thumbnail: {fileID: 2800000, guid: b8f09db3702dc3841b01e939ca3d6a20, type: 3}
+  Thumbnail: {fileID: 2800000, guid: 1fd766c83baac874491803de7705f6c7, type: 3}
   AllowedUser: 2
   ViolentUssage: 1
   SexualUssage: 1
