@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ExporterVersion: 
   Title: oO-kagemaru
-  Version: 7.0.0
+  Version: 7.0.1
   Author: oO
   ContactInformation: https://github.com/oocytanb
   Reference: https://github.com/oocytanb
-  Thumbnail: {fileID: 2800000, guid: a9fbc583e4f72ee4ea57f7464318b0ac, type: 3}
+  Thumbnail: {fileID: 2800000, guid: 92ee2c23ea922c34eb6a801f15c9818a, type: 3}
   AllowedUser: 2
   ViolentUssage: 1
   SexualUssage: 1
