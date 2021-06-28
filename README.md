@@ -6,10 +6,23 @@
 
 ## UPM
 
-`Package Manager > Add package from gi URL..`
+`Packages/manifest.json` に依存関係を追加します。
 
 ```
-https://github.com/oocytanb/oO-vrm-pack.git#2019.4
+{
+  "dependencies": {
+
+    ...
+
+    "com.github.oocytanb.oo-vrm-pack": "https://github.com/oocytanb/oO-vrm-pack.git#2019.4",
+    "com.vrmc.unigltf": "https://github.com/vrm-c/UniVRM.git?path=/Assets/UniGLTF#v0.67.4",
+    "com.vrmc.univrm": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRM#v0.67.4",
+    "com.vrmc.vrmshaders": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRMShaders#v0.67.4",
+
+    ...
+
+  }
+}
 ```
 
 ## Softwares / Assets

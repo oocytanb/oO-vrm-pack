@@ -7,10 +7,5 @@
   "author": {
     "name": "oO",
     "url": "https://github.com/oocytanb/"
-  },
-  "dependencies": {
-    "com.vrmc.unigltf": "https://github.com/vrm-c/UniVRM.git?path=/Assets/UniGLTF#v0.67.4",
-    "com.vrmc.univrm": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRM#v0.67.4",
-    "com.vrmc.vrmshaders": "https://github.com/vrm-c/UniVRM.git?path=/Assets/VRMShaders#v0.67.4"
   }
 }
